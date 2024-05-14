@@ -37,7 +37,7 @@ For information about development:
 ```
 git clone --recursive git://github.com/<YOUR_USERNAME>/nifskope.git
 ```
-Important : once the project is compiled, put the nif.xml and kfm.xml files into your app directory 
+Important : once the project is compiled, put the nif.xml and kfm.xml files into your app directory (in /Contents/MacOS/)
 
 ### Miscellaneous
 
