@@ -500,7 +500,14 @@ win32:contains(QT_ARCH, i386) {
 
 	copyDirs( $$SHADERS, shaders )
 	#copyDirs( $$LANG, lang )
+	
+unix:!macx {
 	copyFiles( $$XML $$QSS )
+}
+
+macx {
+	copyFiles( $$XML $$QSS , "NifSkope.app/Contents/MacOS")
+}	
 
 	# Copy Readmes and rename to TXT
 	copyFiles( $$READMES,,,, md:txt )
